@@ -34,8 +34,8 @@ function Index() {
           <p className="mb-6 text-xs font-medium uppercase tracking-[0.2em] text-accent">
             Medicine &middot; Dentistry &middot; UK Applicants
           </p>
-          <h1 className="text-balance text-4xl font-bold leading-[1.05] text-foreground md:text-6xl">
-            Admission to your&nbsp;medical or dental school.<br />
+          <h1 className="text-balance text-5xl font-bold leading-[1.05] text-foreground md:text-7xl">
+            <span className="text-accent">Admission</span> to your&nbsp;medical or dental school.<br />
             Within 4-6 months.<br />
             Guarenteed.
           </h1>
