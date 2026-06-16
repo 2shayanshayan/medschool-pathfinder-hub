@@ -117,6 +117,41 @@ function Index() {
         </div>
       </section>
 
+      {/* About Me */}
+      <section className="border-t border-border/60 py-24 md:py-28">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-4xl font-semibold leading-tight text-foreground md:text-5xl">
+              About Me
+            </h2>
+          </div>
+
+          <div className="mt-16 grid items-start gap-10 md:grid-cols-2">
+            <div className="overflow-hidden rounded-2xl border border-border">
+              <img
+                src="/about-me-photo.jpg"
+                alt="Shayan Ali"
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl font-semibold text-foreground md:text-3xl">
+                Shayan Ali
+              </h3>
+              <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  I'm a dental student at University of Manchester and achieved a top percentile score in my UCAT alongside all As and A*s in GCSEs and A Levels. For the past 3 years I have been walking students through the Medical and Dental admissions process and coaching them through GCSEs and A levels. I built Medentra Academy after witnessing multiple family friends fail to get admission into medical school in the UK despite spending thousands on tuition and taking multiple gap years. This happens every year with 90% of dental applicants not getting in first time round. This programme is in place to stop this from happening to you. This programme leverages one core principle: The admissions process punishes students who don't have a structured revision framework. My programme implements personalised weekly action points for each and every student to ensure high UCAT scores, A level grades and smashing interviews becomes routine.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <blockquote className="mx-auto mt-16 max-w-3xl text-center text-lg italic text-muted-foreground">
+            "UK medical and dental applications assess you on grades, aptitude tests, a personal statement, and interview performance — all simultaneously. Every element needs to be built steadily, not rushed."
+          </blockquote>
+        </div>
+      </section>
+
       {/* Closing CTA */}
       <section className="border-t border-border/60 py-24 md:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center">
