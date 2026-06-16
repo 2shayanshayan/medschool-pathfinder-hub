@@ -318,7 +318,7 @@ function Index() {
           </div>
           <div className="mx-auto mt-8 max-w-3xl rounded-xl border border-border/60 bg-muted/30 p-6 text-base leading-relaxed text-foreground/80 md:p-8">
             <p>
-              Each year the average UCAT score of Manchester Dental offer holders climbs by a significant margin. The UCAT itself is not getting harder — the bar is. Applicants are revising smarter, longer and with better resources, and the cut-off shifts upward in lockstep.
+              Each year the average UCAT score of Manchester Dental offer holders climbs by a significant margin. The UCAT itself is not getting harder, the bar is. Applicants are revising smarter, longer and with better resources and the cut-off shifts upward in lockstep.
             </p>
             <p className="mt-4">
               Without a structured revision plan and a framework outlining daily targets, the gap between effort and outcomes increases exponentially. Applicants without a system get swept under the rug by universities, no matter how many hours they put in.
