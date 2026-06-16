@@ -62,13 +62,11 @@ function Index() {
             Medicine &middot; Dentistry &middot; UK Applicants
           </p>
           <h1 className="text-balance text-5xl font-bold leading-[1.05] text-foreground md:text-7xl">
-            <span className="text-accent">Admission</span> to your&nbsp;medical or dental school.<br />
-            Within 4-6 months.<br />
-            Guaranteed.
+            Guaranteed&nbsp;Admission to your&nbsp;medical or dental school.
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-pretty text-lg text-muted-foreground md:text-xl">
             1:1 coaching for aspiring doctors and dentists to win admissions to UK
-            medical and dental schools within 4-6 months through our proven Future
+            medical and dental schools within 5-8 months through our proven Future
             Doctor Framework. All Protected through our no admission, no fee
             guarantee
           </p>
