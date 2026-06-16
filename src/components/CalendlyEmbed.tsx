@@ -22,7 +22,7 @@ export function CalendlyEmbed({ height = 720 }: { height?: number }) {
   return (
     <div
       className="calendly-inline-widget"
-      data-url={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=ffffff&text_color=1a1a1a&primary_color=1f2a44`}
+      data-url={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=ffffff&text_color=333333&primary_color=3d6b7a`}
       style={{ minWidth: "320px", height: `${height}px` }}
     />
   );

@@ -49,14 +49,6 @@ function Index() {
 
       {/* Hero */}
       <section className="relative overflow-hidden pt-32 pb-24 md:pt-44 md:pb-32">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -top-32 right-0 h-[600px] w-[600px] rounded-full opacity-60 blur-3xl"
-          style={{
-            background:
-              "radial-gradient(closest-side, oklch(0.78 0.12 35 / 0.45), transparent)",
-          }}
-        />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-6 text-xs font-medium uppercase tracking-[0.2em] text-accent">
             Medicine &middot; Dentistry &middot; UK Applicants
@@ -210,37 +202,37 @@ function Index() {
                 quote: "I was struggling with the unqiue style of interviews at Cardiff but Shayan Organised a personalised structured plan for me to win an admission",
                 name: "Younis A.",
                 achievement: "Offer holder · Cardiff University (Medicine)",
-                bg: "bg-[oklch(0.93_0.04_85)]",
+                bg: "bg-[oklch(0.96_0.012_210)]",
               },
               {
                 quote: "The interview questions were extremely similar to the real thing. Really grateful since Manchester was my only interview offer.",
                 name: "Aafan A.\u00a0",
                 achievement: "Offer holder · University of Manchester (Denstistry)",
-                bg: "bg-[oklch(0.92_0.035_220)]",
+                bg: "bg-[oklch(0.96_0.01_42)]",
               },
               {
                 quote: "Shayans style of tutoring paired with accountability and a weekly system kept me from going astray.",
                 name: "Anish",
                 achievement: "GCSE's Achieved · All As and A*s",
-                bg: "bg-[oklch(0.93_0.04_150)]",
+                bg: "bg-[oklch(0.96_0.012_150)]",
               },
               {
                 quote: "My personal statement went through about six rewrites and I was so glad it did once I achieved my offer.",
                 name: "Shameer A.",
                 achievement: "Offer holder · UCL",
-                bg: "bg-[oklch(0.93_0.04_30)]",
+                bg: "bg-[oklch(0.96_0.01_90)]",
               },
               {
                 quote: "Honestly the best decision my parents made. The structure made A Level chemistry click in a way nothing else did.",
                 name: "Eleanor M.",
                 achievement: "Offer holder · University of Bristol (Dentistry)",
-                bg: "bg-[oklch(0.92_0.04_300)]",
+                bg: "bg-[oklch(0.96_0.012_300)]",
               },
               {
                 quote: "Shayan for sure helped me a lot, I knew exactly what to do each week and it showed in my results. I really appreciate what hes done for me.",
                 name: "Maneesh P",
                 achievement: "A Levels Acheived · A* achieved\u00a0",
-                bg: "bg-[oklch(0.93_0.04_85)]",
+                bg: "bg-[oklch(0.96_0.01_42)]",
               },
             ].map((t, i) => (
               <figure
