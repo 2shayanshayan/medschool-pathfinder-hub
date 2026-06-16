@@ -134,11 +134,11 @@ function Index() {
                 className="h-auto w-full object-cover"
               />
             </div>
-            <div>
+            <div className="md:pl-6 lg:pl-8">
               <h3 className="text-2xl font-semibold text-foreground md:text-3xl">
                 Shayan Ali
               </h3>
-              <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
+              <div className="mt-6 space-y-5 text-muted-foreground leading-[1.65] text-justify">
                 <p>
                   &nbsp; &nbsp;I'm a dental student at University of Manchester and achieved a top percentile score in my UCAT alongside all As and A*s in GCSEs and A Levels. For the past 3 years I have been walking students through the Medical and Dental admissions process and coaching them through GCSEs and A levels.&nbsp;
                 </p>
