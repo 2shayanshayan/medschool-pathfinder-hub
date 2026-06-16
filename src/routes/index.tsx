@@ -284,7 +284,7 @@ function Index() {
       <section className="border-t border-border/60 py-20 md:py-24">
         <div className="mx-auto max-w-5xl px-6">
           <h2 className="text-balance text-center text-4xl font-semibold leading-tight text-foreground md:text-5xl">
-            The bar rises
+            The Bar Rises
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-muted-foreground">
             Mean UCAT scores of University of Manchester Dentistry applicants and shortlisted offer holders, 2021–2025 entry.
