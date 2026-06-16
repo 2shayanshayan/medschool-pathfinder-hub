@@ -195,6 +195,11 @@ function Index() {
           <h2 className="text-balance text-4xl font-semibold leading-tight text-foreground md:text-5xl">
             Find out if we're the right fit.
           </h2>
+        </div>
+      </section>
+    </div>
+  );
+}
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
             A zero commitment, 30-minute conversation about your child's current
             position. We'll go over their current revision strategy, the
