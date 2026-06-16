@@ -42,7 +42,11 @@ function BookPage() {
             <ArrowLeft className="h-4 w-4" /> Back to home
           </Link>
           <p className="mb-5 text-xs font-medium uppercase tracking-[0.2em] text-accent">
-            Free 30-minute consultation
+            A relaxed 30-minute conversation about your child's current position.
+            We'll go over their current revision strategy, the resources they
+            use, and where they're struggling. Then we'll map out exactly what
+            needs to happen to land the result. If we're a fit, we move forward.
+            If not, you walk away with a clearer plan and no obligation
           </p>
           <h1 className="text-balance text-4xl font-semibold leading-[1.1] text-foreground md:text-6xl">
             Let's map out your route in.
@@ -116,7 +120,7 @@ function BookPage() {
 
       <footer className="border-t border-border/60 py-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 text-sm text-muted-foreground md:flex-row">
-          <p>&copy; {new Date().getFullYear()} Ascend Admissions</p>
+          <p>&copy; {new Date().getFullYear()} Medentra Academy</p>
           <p>Independent tutoring &middot; Not affiliated with any university</p>
         </div>
       </footer>

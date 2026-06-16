@@ -37,12 +37,13 @@ function Index() {
           <h1 className="text-balance text-5xl font-semibold leading-[1.05] text-foreground md:text-7xl">
             An offer from your&nbsp;medical or dental school.<br />
             Within 4-6 months.<br />
-            Guarenteed
+            Guarenteed.
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-pretty text-lg text-muted-foreground md:text-xl">
-            1:1 coaching for Year 12 and Year 13 applicants — UCAT, personal
-            statement, interview, and the long game in between. Built around
-            you, measured every week.
+            1:1 coaching for aspiring doctors and dentists to win admissions to UK
+            medical and dental schools within 4-6 months through our proven Future
+            Doctor Framework. All Protected through our no admission, no fee
+            guarantee
           </p>
           <div className="mt-10 flex items-center justify-center">
             <Link
@@ -64,7 +65,7 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="mx-auto max-w-2xl text-center">
             <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-accent">
-              The approach
+              THE FUTURE DOCTOR FRAMEWORK
             </p>
             <h2 className="text-4xl font-semibold leading-tight text-foreground md:text-5xl">
               A system, not a stack of past papers.
@@ -81,13 +82,13 @@ function Index() {
                 icon: BookOpenCheck,
                 num: "01",
                 title: "Structured revision",
-                body: "A weekly plan that sequences UCAT, school content and admissions tasks so nothing competes for the same hour. You always know what to do next.",
+                body: "A weekly plan that sequences UCAT, school content and admissions tasks so nothing competes for the same hour. You always know what to do next and are held accountable by weekly 1-1 calls.\u00a0",
               },
               {
                 icon: Target,
                 num: "02",
                 title: "Weak-point targeting",
-                body: "Diagnostics surface the questions and topics costing you marks. Each session attacks the highest-leverage gap — not whatever felt comfortable to revise.",
+                body: "Diagnostics surface the questions and topics costing you marks. Each session attacks the highest-leverage gap, not whatever felt comfortable to revise.",
               },
               {
                 icon: LineChart,
@@ -123,8 +124,11 @@ function Index() {
             Find out if we're the right fit.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
-            A short, honest call. We'll talk through your current position,
-            your target schools, and whether 1:1 coaching is worth your time.
+            A z30-minute conversation about your child's current position. We'll
+            go over their current revision strategy, the resources they use, and
+            where they're struggling. Then we'll map out exactly what needs to
+            happen to land the result. If we're a fit, we move forward. If not,
+            you walk away with a clearer plan and no obligation
           </p>
           <Link
             to="/book"
