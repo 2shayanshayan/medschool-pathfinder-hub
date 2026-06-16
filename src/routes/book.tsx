@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
-import { ArrowLeft, Clock, MessageSquare, Map } from "lucide-react";
+import { ArrowLeft, Clock, MessageSquare, MapIcon } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 
 // TODO: Replace with your real Calendly URL
-const CALENDLY_URL = "https://calendly.com/your-handle/consultation";
+const CALENDLY_URL = "https://calendly.com/shayanali41256/30min";
 
 export const Route = createFileRoute("/book")({
   head: () => ({
@@ -93,7 +93,7 @@ function BookPage() {
                 body: "Current UCAT/BMAT scores, predicted grades, target schools, and what you've already tried.",
               },
               {
-                icon: Map,
+                icon: MapIcon,
                 title: "Where you need to be",
                 body: "A realistic look at the gap to your target offers and the timeline you've got left to close it.",
               },
