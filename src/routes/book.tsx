@@ -1,11 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect } from "react";
 import { ArrowLeft, Clock, MessageSquare, MapIcon } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { CalendlyEmbed } from "@/components/CalendlyEmbed";
-
-// TODO: Replace with your real Calendly URL
-const CALENDLY_URL = "https://calendly.com/shayanali41256/30min";
 
 export const Route = createFileRoute("/book")({
   head: () => ({
