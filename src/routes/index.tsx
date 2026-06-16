@@ -4,6 +4,7 @@ import { ArrowRight, Target, LineChart, BookOpenCheck } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { useEffect, useState } from "react";
 import { BarRisesChart } from "@/components/BarRisesChart";
+import { CalendlyEmbed } from "@/components/CalendlyEmbed";
 
 export const Route = createFileRoute("/")({
   head: () => ({
