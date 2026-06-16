@@ -6,9 +6,9 @@ import { SiteHeader } from "@/components/SiteHeader";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ascend Admissions — 1:1 Tutoring for Medical & Dental School Applicants" },
+      { title: "Medentra Academy — 1:1 Tutoring for Medical & Dental School Applicants" },
       { name: "description", content: "Specialist UCAT, BMAT and interview coaching for ambitious medical and dental school applicants. Structured revision, targeted weak-point work, and weekly progress tracking." },
-      { property: "og:title", content: "Ascend Admissions — Medical & Dental School Tutoring" },
+      { property: "og:title", content: "Medentra Academy — Medical & Dental School Tutoring" },
       { property: "og:description", content: "Specialist 1:1 coaching that turns ambitious applicants into med and dental school offer-holders." },
     ],
   }),
@@ -138,7 +138,7 @@ function Index() {
 
       <footer className="border-t border-border/60 py-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 text-sm text-muted-foreground md:flex-row">
-          <p>&copy; {new Date().getFullYear()} Ascend Admissions</p>
+          <p>&copy; {new Date().getFullYear()} Medentra Academy</p>
           <p>Independent tutoring &middot; Not affiliated with any university</p>
         </div>
       </footer>
