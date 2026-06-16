@@ -4,6 +4,7 @@ import { ArrowRight, Target, LineChart, BookOpenCheck } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { useEffect, useState } from "react";
 import { BarRisesChart } from "@/components/BarRisesChart";
+import { CalendlyEmbed } from "@/components/CalendlyEmbed";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -298,6 +299,9 @@ function Index() {
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
             A no-pressure 30-minute chat about your child's A-Level Maths journey. We'll take a look at how they're revising, what resources they're using, and where they're finding it tough. Then build a clear picture of the road ahead and what is needed to land them an admission to medical or dental school.&nbsp;If we're a fit, we move forward. If not, you walk away with a clearer plan and no obligation.
           </p>
+          <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+            <CalendlyEmbed height={700} />
+          </div>
           <Link
             to="/book"
             className="group mt-10 inline-flex items-center gap-2 rounded-md bg-primary px-6 py-4 text-base font-medium text-primary-foreground shadow-md transition hover:bg-primary/90"
