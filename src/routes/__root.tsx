@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Medentra Academy" },
+      { name: "description", content: "1:1 coaching for ambitious students to secure UK offers within 5–8 months via the Future Doctor Framework. Protected by our no-admission, no-fee guarantee." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Medentra Academy" },
+      { property: "og:description", content: "1:1 coaching for ambitious students to secure UK offers within 5–8 months via the Future Doctor Framework. Protected by our no-admission, no-fee guarantee." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Medentra Academy" },
+      { name: "twitter:description", content: "1:1 coaching for ambitious students to secure UK offers within 5–8 months via the Future Doctor Framework. Protected by our no-admission, no-fee guarantee." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/60912c37-4275-4b5c-8bdc-f289ac2d45c0/id-preview-2b9d1ebf--a108c6cb-e145-44bf-8d52-5fb5824c3ca3.lovable.app-1781624352800.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/60912c37-4275-4b5c-8bdc-f289ac2d45c0/id-preview-2b9d1ebf--a108c6cb-e145-44bf-8d52-5fb5824c3ca3.lovable.app-1781624352800.png" },
     ],
     links: [
       {
