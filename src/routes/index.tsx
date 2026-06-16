@@ -327,12 +327,6 @@ function Index() {
                 bg: "bg-card",
               },
               {
-                quote: "My personal statement went through about six rewrites and I was so glad it did once I achieved my offer.",
-                name: "Shameer A.",
-                achievement: "Offer holder · UCL",
-                bg: "bg-secondary",
-              },
-              {
                 quote: "Honestly the best decision my parents made. The structure made A Level chemistry click in a way nothing else did.",
                 name: "Eleanor M.",
                 achievement: "Offer holder · University of Bristol (Dentistry)",
