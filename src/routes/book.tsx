@@ -39,8 +39,8 @@ function BookPage() {
             Let's map out your route in.
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
-            Pick a time that works for you. We'll meet on Zoom — students and
-            parents are both welcome on the call.
+            Pick a time that works for you. Students and parents are both wanted
+            on the call.
           </p>
         </div>
       </section>
