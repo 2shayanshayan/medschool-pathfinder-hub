@@ -189,6 +189,81 @@ function Index() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section className="border-t border-border/60 py-24 md:py-28">
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-4xl font-semibold leading-tight text-foreground md:text-5xl">
+              Testimonials
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Real results from students I've coached through their applications.
+            </p>
+          </div>
+
+          <div
+            className="relative mx-auto mt-14 max-w-2xl snap-y snap-mandatory space-y-5 overflow-y-auto pr-3"
+            style={{ height: "560px", scrollbarGutter: "stable" }}
+          >
+            {[
+              {
+                quote: "Shayan's structured weekly plans completely changed how I approached the UCAT. I went from struggling with VR to scoring in the top decile.",
+                name: "Aisha K.",
+                achievement: "Offer holder · University of Manchester (Dentistry)",
+                bg: "bg-[oklch(0.93_0.04_85)]",
+              },
+              {
+                quote: "The interview prep was unmatched. By the time MMIs came around I'd practised every station type and felt genuinely calm walking in.",
+                name: "Daniel O.",
+                achievement: "Offer holder · King's College London (Medicine)",
+                bg: "bg-[oklch(0.92_0.035_220)]",
+              },
+              {
+                quote: "I'd already had two tutors before Shayan. The difference was the accountability — weekly targets meant I never drifted.",
+                name: "Priya S.",
+                achievement: "Offer holder · University of Birmingham (Dentistry)",
+                bg: "bg-[oklch(0.93_0.04_150)]",
+              },
+              {
+                quote: "My personal statement went through about six rewrites and I'm so glad it did. Every interviewer brought it up.",
+                name: "Hamza R.",
+                achievement: "Offer holder · Queen Mary University of London (Medicine)",
+                bg: "bg-[oklch(0.93_0.04_30)]",
+              },
+              {
+                quote: "Honestly the best decision my parents made. The structure made A Level chemistry click in a way nothing else did.",
+                name: "Eleanor M.",
+                achievement: "Offer holder · University of Bristol (Dentistry)",
+                bg: "bg-[oklch(0.92_0.04_300)]",
+              },
+              {
+                quote: "Shayan took the guesswork out of the whole process. I knew exactly what to do each week and it showed in my results.",
+                name: "Yusuf A.",
+                achievement: "Offer holder · University of Leeds (Medicine)",
+                bg: "bg-[oklch(0.93_0.04_85)]",
+              },
+            ].map((t, i) => (
+              <figure
+                key={i}
+                className={`${t.bg} snap-start rounded-2xl border border-border/40 p-8 shadow-sm md:p-10`}
+              >
+                <blockquote className="font-serif text-lg leading-relaxed text-foreground md:text-xl">
+                  &ldquo;{t.quote}&rdquo;
+                </blockquote>
+                <figcaption className="mt-6 text-sm text-foreground/70">
+                  <span className="font-medium text-foreground">{t.name}</span>
+                  <span className="mx-2">·</span>
+                  <span>{t.achievement}</span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <p className="mt-4 text-center text-xs text-muted-foreground">
+            Scroll within the panel to see more
+          </p>
+        </div>
+      </section>
+
       {/* Closing CTA */}
       <section className="border-t border-border/60 py-24 md:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center">
