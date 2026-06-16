@@ -2,9 +2,8 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
   tanstackStart: {
+    target: "cloudflare-module",
     server: { entry: "server" },
   },
-  vite: {
-    plugins: [],
-  },
+  vite: { plugins: [] },
 });
