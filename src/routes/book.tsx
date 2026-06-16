@@ -20,16 +20,6 @@ export const Route = createFileRoute("/book")({
 });
 
 function BookPage() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <div className="relative min-h-screen">
       <SiteHeader />
@@ -62,11 +52,7 @@ function BookPage() {
       {/* Calendly embed */}
       <section className="px-6">
         <div className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-          <div
-            className="calendly-inline-widget"
-            data-url={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=ffffff&text_color=1a1a1a&primary_color=1f2a44`}
-            style={{ minWidth: "320px", height: "720px" }}
-          />
+          <CalendlyEmbed />
         </div>
       </section>
 
