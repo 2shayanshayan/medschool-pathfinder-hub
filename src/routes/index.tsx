@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Target, LineChart, BookOpenCheck } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
+import { useEffect, useState } from "react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
