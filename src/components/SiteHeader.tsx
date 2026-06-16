@@ -5,8 +5,8 @@ export function SiteHeader() {
   return (
     <header className="absolute inset-x-0 top-0 z-20">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 md:py-8">
-        <Link to="/" className="font-serif text-xl font-semibold tracking-tight text-foreground md:text-2xl">
-          Ascend <span className="text-accent">Admissions</span>
+        <Link to="/" className="font-serif text-xl font-semibold tracking-tight text-foreground md:text-2xl whitespace-nowrap">
+          Medentra <span className="text-accent">Academy</span>
         </Link>
         <Link
           to="/book"
