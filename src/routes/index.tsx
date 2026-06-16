@@ -39,7 +39,7 @@ function Index() {
             : "pointer-events-none -translate-y-3 opacity-0"
         }`}
       >
-        <span>Book a call</span>
+        <span>Book a free call</span>
         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
       </Link>
 
@@ -75,7 +75,7 @@ function Index() {
               to="/book"
               className="group inline-flex items-center gap-2 rounded-md bg-primary px-6 py-4 text-base font-medium text-primary-foreground shadow-md transition hover:bg-primary/90"
             >
-              <span>Book a call&nbsp;</span>
+              <span>Book a free diagnostics call&nbsp;</span>
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
           </div>
@@ -277,7 +277,7 @@ function Index() {
             to="/book"
             className="group mt-10 inline-flex items-center gap-2 rounded-md bg-primary px-6 py-4 text-base font-medium text-primary-foreground shadow-md transition hover:bg-primary/90"
           >
-            <span>Book a call&nbsp;</span>
+            <span>Book a free diagnostics call&nbsp;</span>
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </Link>
         </div>
