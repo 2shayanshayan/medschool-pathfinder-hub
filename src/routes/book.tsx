@@ -77,7 +77,7 @@ function BookPage() {
               What to expect
             </p>
             <h2 className="text-4xl font-semibold leading-tight text-foreground md:text-5xl">
-              An honest conversation. No sales script.
+              An honest conversation.
             </h2>
             <p className="mt-5 text-lg text-muted-foreground">
               The call exists so you can decide whether working together makes
