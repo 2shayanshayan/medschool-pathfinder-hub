@@ -3,6 +3,16 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, Target, LineChart, BookOpenCheck } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { useEffect, useState } from "react";
+import {
+  LineChart as ReLineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 export const Route = createFileRoute("/")({
   head: () => ({
