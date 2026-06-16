@@ -184,7 +184,7 @@ function Index() {
           </div>
 
           <blockquote className="mx-auto mt-16 max-w-3xl text-center text-lg italic text-muted-foreground">
-            "UK medical and dental applications assess you on grades, aptitude tests, a personal statement, and interview performance — all simultaneously. Every element needs to be built steadily, not rushed."
+            "UK medical and dental applications assess you on grades, aptitude tests, a personal statement, and interview performance all simultaneously. Every element needs to be built steadily, not rushed."
           </blockquote>
         </div>
       </section>
