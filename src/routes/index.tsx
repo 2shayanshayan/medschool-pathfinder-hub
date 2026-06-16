@@ -17,9 +17,33 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const [showStickyCta, setShowStickyCta] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setShowStickyCta(window.scrollY > 500);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <div className="relative min-h-screen">
       <SiteHeader />
+
+      <Link
+        to="/book"
+        aria-label="Book a call"
+        className={`group fixed right-4 top-4 z-50 inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground shadow-lg transition-all duration-300 hover:bg-primary/90 md:right-6 md:top-6 md:px-5 md:py-3 ${
+          showStickyCta
+            ? "translate-y-0 opacity-100"
+            : "pointer-events-none -translate-y-3 opacity-0"
+        }`}
+      >
+        <span>Book a call</span>
+        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+      </Link>
+
+
 
       {/* Hero */}
       <section className="relative overflow-hidden pt-32 pb-24 md:pt-44 md:pb-32">
