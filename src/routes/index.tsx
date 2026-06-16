@@ -28,6 +28,11 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const [showStickyCta, setShowStickyCta] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setShowStickyCta(window.scrollY > 500);
@@ -285,6 +290,7 @@ function Index() {
             Mean UCAT scores of University of Manchester Dentistry applicants and shortlisted offer holders, 2021–2025 entry.
           </p>
           <div className="mt-10 h-[380px] w-full rounded-2xl border border-border/60 bg-card p-4 md:p-6">
+            {mounted ? (
             <ResponsiveContainer width="100%" height="100%">
               <ReLineChart
                 data={[
@@ -315,6 +321,9 @@ function Index() {
                 <Line type="monotone" dataKey="Shortlisted" stroke="hsl(var(--primary))" strokeWidth={2.5} dot={{ r: 4 }} />
               </ReLineChart>
             </ResponsiveContainer>
+            ) : (
+              <div className="h-full w-full" aria-hidden />
+            )}
           </div>
           <div className="mx-auto mt-8 max-w-3xl rounded-xl border border-border/60 bg-muted/30 p-6 text-base leading-relaxed text-foreground/80 md:p-8">
             <p>
