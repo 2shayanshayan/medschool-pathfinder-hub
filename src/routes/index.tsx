@@ -140,7 +140,19 @@ function Index() {
               </h3>
               <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  I'm a dental student at University of Manchester and achieved a top percentile score in my UCAT alongside all As and A*s in GCSEs and A Levels. For the past 3 years I have been walking students through the Medical and Dental admissions process and coaching them through GCSEs and A levels. I built Medentra Academy after witnessing multiple family friends fail to get admission into medical school in the UK despite spending thousands on tuition and taking multiple gap years. This happens every year with 90% of dental applicants not getting in first time round. This programme is in place to stop this from happening to you. This programme leverages one core principle: The admissions process punishes students who don't have a structured revision framework. My programme implements personalised weekly action points for each and every student to ensure high UCAT scores, A level grades and smashing interviews becomes routine.
+                  &nbsp; &nbsp;I'm a dental student at University of Manchester and achieved a top percentile score in my UCAT alongside all As and A*s in GCSEs and A Levels. For the past 3 years I have been walking students through the Medical and Dental admissions process and coaching them through GCSEs and A levels.&nbsp;
+                </p>
+                <p>
+                  &nbsp;&nbsp;
+                </p>
+                <p>
+                  &nbsp; &nbsp;I built Medentra Academy after witnessing multiple family friends fail to get admission into medical school in the UK despite spending thousands on tuition and taking multiple gap years. This happens every year with 90% of dental applicants not getting in first time round. This programme is in place to stop this from happening to you.&nbsp;
+                </p>
+                <p>
+                  &nbsp; &nbsp;
+                </p>
+                <p>
+                  &nbsp; This programme leverages one core principle: The admissions process punishes students who don't have a structured revision framework. My programme implements personalised weekly action points for each and every student to ensure high UCAT scores, A level grades and smashing interviews becomes routine.
                 </p>
               </div>
             </div>
