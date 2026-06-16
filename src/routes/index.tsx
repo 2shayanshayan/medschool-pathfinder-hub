@@ -275,6 +275,59 @@ function Index() {
       </section>
 
       {/* Closing CTA */}
+      {/* The bar rises */}
+      <section className="border-t border-border/60 py-20 md:py-24">
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="text-balance text-center text-4xl font-semibold leading-tight text-foreground md:text-5xl">
+            The bar rises
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-muted-foreground">
+            Mean UCAT scores of University of Manchester Dentistry applicants and shortlisted offer holders, 2021–2025 entry.
+          </p>
+          <div className="mt-10 h-[380px] w-full rounded-2xl border border-border/60 bg-card p-4 md:p-6">
+            <ResponsiveContainer width="100%" height="100%">
+              <ReLineChart
+                data={[
+                  { year: "2021", Applicants: 2533, Shortlisted: 2722 },
+                  { year: "2022", Applicants: 2537, Shortlisted: 2746 },
+                  { year: "2023", Applicants: 2577, Shortlisted: 2794 },
+                  { year: "2024", Applicants: 2635, Shortlisted: 2860 },
+                  { year: "2025", Applicants: 2745, Shortlisted: 2950 },
+                ]}
+                margin={{ top: 16, right: 24, left: 0, bottom: 8 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+                <XAxis dataKey="year" stroke="hsl(var(--muted-foreground))" />
+                <YAxis
+                  domain={[2450, 3000]}
+                  stroke="hsl(var(--muted-foreground))"
+                  label={{ value: "Mean UCAT score", angle: -90, position: "insideLeft", style: { fill: "hsl(var(--muted-foreground))" } }}
+                />
+                <Tooltip
+                  contentStyle={{
+                    background: "hsl(var(--background))",
+                    border: "1px solid hsl(var(--border))",
+                    borderRadius: 8,
+                  }}
+                />
+                <Legend />
+                <Line type="monotone" dataKey="Applicants" stroke="hsl(var(--muted-foreground))" strokeWidth={2} dot={{ r: 4 }} />
+                <Line type="monotone" dataKey="Shortlisted" stroke="hsl(var(--primary))" strokeWidth={2.5} dot={{ r: 4 }} />
+              </ReLineChart>
+            </ResponsiveContainer>
+          </div>
+          <div className="mx-auto mt-8 max-w-3xl rounded-xl border border-border/60 bg-muted/30 p-6 text-base leading-relaxed text-foreground/80 md:p-8">
+            <p>
+              Each year the average UCAT score of Manchester Dental offer holders climbs by a significant margin. The UCAT itself is not getting harder — the bar is. Applicants are revising smarter, longer and with better resources, and the cut-off shifts upward in lockstep.
+            </p>
+            <p className="mt-4">
+              Without a structured revision plan and a framework outlining daily targets, the gap between effort and outcomes increases exponentially. Applicants without a system get swept under the rug by universities, no matter how many hours they put in.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Closing CTA */}
       <section className="border-t border-border/60 py-24 md:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-balance text-4xl font-semibold leading-tight text-foreground md:text-5xl">
