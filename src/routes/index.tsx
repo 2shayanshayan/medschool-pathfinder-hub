@@ -124,11 +124,12 @@ function Index() {
             Find out if we're the right fit.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
-            A z30-minute conversation about your child's current position. We'll
-            go over their current revision strategy, the resources they use, and
-            where they're struggling. Then we'll map out exactly what needs to
-            happen to land the result. If we're a fit, we move forward. If not,
-            you walk away with a clearer plan and no obligation
+            A zero commitment, 30-minute conversation about your child's current
+            position. We'll go over their current revision strategy, the
+            resources they use, and where they're struggling. Then we'll map out
+            exactly what needs to happen to land the result. If we're a fit, we
+            move forward. If not, you walk away with a clearer plan and no
+            obligation
           </p>
           <Link
             to="/book"
