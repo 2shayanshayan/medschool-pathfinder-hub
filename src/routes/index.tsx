@@ -92,7 +92,7 @@ function Index() {
               <p className="mt-4 max-w-md text-base leading-relaxed text-foreground/75">
                 A systematic four-pillar approach covering clinical aptitude,
                 interview mastery, personal statement craft and weekly academic
-                strategy — built around each student.
+                strategy, built around each student.
               </p>
             </div>
             <div className="mt-8 flex items-center">
