@@ -126,12 +126,12 @@ function Index() {
             </h2>
           </div>
 
-          <div className="mt-16 grid items-start gap-10 md:grid-cols-2">
+          <div className="mt-16 grid items-start gap-10 md:grid-cols-[340px_1fr] lg:grid-cols-[380px_1fr]">
             <div className="overflow-hidden rounded-2xl border border-border">
               <img
                 src="/about-me-photo.jpg"
                 alt="Shayan Ali"
-                className="h-full w-full object-cover"
+                className="h-auto w-full object-cover"
               />
             </div>
             <div>
