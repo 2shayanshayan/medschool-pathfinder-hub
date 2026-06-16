@@ -119,7 +119,7 @@ function Index() {
                 icon: LineChart,
                 num: "03",
                 title: "Progress tracking",
-                body: "Scores, accuracy and timing are logged after every session. Parents get a clear monthly summary; you see exactly how far the next jump needs to go.",
+                body: "Scores, accuracy and timing are logged after every session. Parents get a clear monthly summary; you see exactly how far the next jump needs to go. Students also recieve 24/7 support from me personally",
               },
             ].map(({ icon: Icon, num, title, body }) => (
               <div
