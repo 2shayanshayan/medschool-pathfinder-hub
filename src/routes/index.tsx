@@ -271,12 +271,7 @@ function Index() {
             Find out if we're the right fit.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
-            A zero commitment, 30-minute conversation about your child's current
-            position. We'll go over their current revision strategy, the
-            resources they use, and where they're struggling. Then we'll map out
-            exactly what needs to happen to land the result. If we're a fit, we
-            move forward. If not, you walk away with a clearer plan and no
-            obligation
+            A no-pressure 30-minute chat about your child's A-Level Maths journey. We'll take a look at how they're revising, what resources they're using, and where they're finding it tough. Then build a clear picture of the road ahead and what is needed to land them an admission to medical or dental school.&nbsp;If we're a fit, we move forward. If not, you walk away with a clearer plan and no obligation.
           </p>
           <Link
             to="/book"
