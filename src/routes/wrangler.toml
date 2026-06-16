@@ -1,7 +1,6 @@
-name = "medschool-pathfinder"
-main = ".output/server/index.mjs"
+name = "medschool-pathfinder-hub"
 compatibility_date = "2024-01-01"
 compatibility_flags = ["nodejs_compat"]
+main = ".output/server/index.mjs"
 
-[site]
-bucket = ".output/public"
+assets = { directory = ".output/public" }
