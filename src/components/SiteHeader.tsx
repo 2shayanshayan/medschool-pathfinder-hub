@@ -12,8 +12,7 @@ export function SiteHeader() {
           to="/book"
           className="group inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground shadow-sm transition hover:bg-primary/90 md:px-5 md:py-3"
         >
-          <span className="hidden sm:inline">Book your free consultation</span>
-          <span className="sm:hidden">Book a call</span>
+          <span>Book a call&nbsp;</span>
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
         </Link>
       </div>

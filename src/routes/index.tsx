@@ -35,8 +35,9 @@ function Index() {
             Medicine &middot; Dentistry &middot; UK Applicants
           </p>
           <h1 className="text-balance text-5xl font-semibold leading-[1.05] text-foreground md:text-7xl">
-            An offer from <em className="font-serif italic text-accent">your</em> medical
-            or dental school. Earned, not hoped for.
+            An offer from your&nbsp;medical or dental school.<br />
+            Within 4-6 months.<br />
+            Guarenteed
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-pretty text-lg text-muted-foreground md:text-xl">
             1:1 coaching for Year 12 and Year 13 applicants — UCAT, personal
@@ -48,7 +49,7 @@ function Index() {
               to="/book"
               className="group inline-flex items-center gap-2 rounded-md bg-primary px-6 py-4 text-base font-medium text-primary-foreground shadow-md transition hover:bg-primary/90"
             >
-              Book your free consultation
+              <span>Book a call&nbsp;</span>
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
           </div>
@@ -129,7 +130,7 @@ function Index() {
             to="/book"
             className="group mt-10 inline-flex items-center gap-2 rounded-md bg-primary px-6 py-4 text-base font-medium text-primary-foreground shadow-md transition hover:bg-primary/90"
           >
-            Book your free consultation
+            <span>Book a call&nbsp;</span>
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </Link>
         </div>
