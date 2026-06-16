@@ -7,13 +7,17 @@ only affect your self-hosted copy.
 ## One-time setup
 
 ### 1. Get the code locally
+These commands run on YOUR computer in a terminal (PowerShell, Terminal, etc.) —
+not in the GitHub.com web editor.
+
 In Lovable: Plus (+) menu → GitHub → Connect project → Create Repository.
-Then:
+Then on your machine:
 ```bash
 git clone <your-repo-url>
 cd <repo>
-bun install
-bun add -d wrangler
+git checkout -b deploy
+npm install
+npm install -D wrangler
 ```
 
 ### 2. Switch the build target to Cloudflare
@@ -33,11 +37,14 @@ export default defineConfig({
 });
 ```
 
+This repo already has `wrangler.toml` pointing `main` at `src/server.ts`,
+which is the Worker entry the Vite plugin bundles.
+
 ### 3. Deploy
 ```bash
-bunx wrangler login
-bun run build
-bunx wrangler deploy
+npx wrangler login
+npm run build
+npx wrangler deploy
 ```
 
 You'll get a `https://future-doctor-site.<your-subdomain>.workers.dev` URL.
@@ -51,14 +58,17 @@ a Cloudflare zone you own).
 
 ## Ongoing updates
 
-1. Edit in Lovable as usual → it auto-pushes to GitHub.
-2. Locally: `git pull && bun run build && bunx wrangler deploy`.
+1. Edit in Lovable as usual → it auto-pushes to GitHub `main`.
+2. Locally on your `deploy` branch: `git merge main && npm run build && npx wrangler deploy`.
 
 Or wire up a GitHub Action that runs `wrangler deploy` on push.
 
 ## Notes
 
 - No backend currently — no secrets to configure. If you later add server
-  env vars, use `bunx wrangler secret put NAME`.
+  env vars, use `npx wrangler secret put NAME`.
+- The Cloudflare dashboard's "Connect to Git" deploy flow will fail because
+  it expects a static site output. Deploy with `wrangler deploy` from your
+  machine (or a GitHub Action) instead.
 - Lovable-only runtime integrations (preview banner, error reporter) are
   dev-only and won't run in production on Cloudflare.
