@@ -35,7 +35,7 @@ function Index() {
             Medicine &middot; Dentistry &middot; UK Applicants
           </p>
           <h1 className="text-balance text-4xl font-bold leading-[1.05] text-foreground md:text-6xl">
-            An <span className="text-accent">offer</span> from your&nbsp;medical or dental school.<br />
+            Admission to your&nbsp;medical or dental school.<br />
             Within 4-6 months.<br />
             Guarenteed.
           </h1>
