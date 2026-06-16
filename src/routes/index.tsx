@@ -225,7 +225,7 @@ function Index() {
                 bg: "bg-[oklch(0.93_0.04_150)]",
               },
               {
-                quote: "My personal statement went through about six rewrites and I'm so glad it did. Every interviewer brought it up.",
+                quote: "My personal statement went through about six rewrites and I was so glad it did once I achieved my offer.",
                 name: "Shameer A.",
                 achievement: "Offer holder · UCL",
                 bg: "bg-[oklch(0.93_0.04_30)]",
@@ -237,9 +237,9 @@ function Index() {
                 bg: "bg-[oklch(0.92_0.04_300)]",
               },
               {
-                quote: "Shayan took the guesswork out of the whole process. I knew exactly what to do each week and it showed in my results.",
-                name: "Yusuf A.",
-                achievement: "Offer holder · University of Leeds (Medicine)",
+                quote: "Shayan for sure helped me a lot, I knew exactly what to do each week and it showed in my results. I really appreciate what hes done for me.",
+                name: "Maneesh P",
+                achievement: "A Levels Acheived · A* achieved\u00a0",
                 bg: "bg-[oklch(0.93_0.04_85)]",
               },
             ].map((t, i) => (
