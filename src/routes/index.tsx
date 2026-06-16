@@ -49,14 +49,6 @@ function Index() {
 
       {/* Hero */}
       <section className="relative overflow-hidden pt-32 pb-24 md:pt-44 md:pb-32">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -top-32 right-0 h-[600px] w-[600px] rounded-full opacity-60 blur-3xl"
-          style={{
-            background:
-              "radial-gradient(closest-side, oklch(0.78 0.12 35 / 0.45), transparent)",
-          }}
-        />
         <div className="relative mx-auto max-w-5xl px-6 text-center">
           <p className="mb-6 text-xs font-medium uppercase tracking-[0.2em] text-accent">
             Medicine &middot; Dentistry &middot; UK Applicants

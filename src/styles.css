@@ -143,9 +143,6 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    background-image:
-      radial-gradient(oklch(0.20 0.02 50 / 0.05) 1.2px, transparent 1.2px);
-    background-size: 28px 28px;
   }
   h1, h2, h3 {
     font-family: var(--font-serif);
