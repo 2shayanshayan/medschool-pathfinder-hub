@@ -207,21 +207,21 @@ function Index() {
           >
             {[
               {
-                quote: "Shayan's structured weekly plans completely changed how I approached the UCAT. I went from struggling with VR to scoring in the top decile.",
-                name: "Aisha K.",
-                achievement: "Offer holder · University of Manchester (Dentistry)",
+                quote: "I was struggling with the unqiue style of interviews at Cardiff but Shayan Organised a personalised structured plan for me to win an admission",
+                name: "Aafan A.",
+                achievement: "Offer holder · Cardiff University (Medicine)",
                 bg: "bg-[oklch(0.93_0.04_85)]",
               },
               {
-                quote: "The interview prep was unmatched. By the time MMIs came around I'd practised every station type and felt genuinely calm walking in.",
-                name: "Daniel O.",
-                achievement: "Offer holder · King's College London (Medicine)",
+                quote: "I'd already had two tutors before Shayan. The difference was the accountability — weekly targets meant I never drifted and stayed consistent",
+                name: "Younis A.\u00a0",
+                achievement: "Offer holder · Cardiff University (Medicine)",
                 bg: "bg-[oklch(0.92_0.035_220)]",
               },
               {
-                quote: "I'd already had two tutors before Shayan. The difference was the accountability — weekly targets meant I never drifted.",
-                name: "Priya S.",
-                achievement: "Offer holder · University of Birmingham (Dentistry)",
+                quote: "The personal statement templates were unmatched and",
+                name: "Anish",
+                achievement: "GCSE's Achieved · All As and A*s",
                 bg: "bg-[oklch(0.93_0.04_150)]",
               },
               {
