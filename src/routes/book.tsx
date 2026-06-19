@@ -10,7 +10,10 @@ export const Route = createFileRoute("/book")({
       { name: "description", content: "Schedule a free 30-minute consultation to discuss your medical or dental school application and decide if 1:1 coaching is right for you." },
       { property: "og:title", content: "Book your free consultation — Ascend Admissions" },
       { property: "og:description", content: "A no-obligation 30-minute call to plan your route into medicine or dentistry." },
+      { property: "og:url", content: "https://medentraacademy.com/book" },
+      { property: "og:type", content: "website" },
     ],
+    links: [{ rel: "canonical", href: "https://medentraacademy.com/book" }],
   }),
   component: BookPage,
 });
