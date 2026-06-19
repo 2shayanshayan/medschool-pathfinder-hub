@@ -13,7 +13,10 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Specialist UCAT, BMAT and interview coaching for ambitious medical and dental school applicants. Structured revision, targeted weak-point work, and weekly progress tracking." },
       { property: "og:title", content: "Medentra Academy — Medical & Dental School Tutoring" },
       { property: "og:description", content: "Specialist 1:1 coaching that turns ambitious applicants into med and dental school offer-holders." },
+      { property: "og:url", content: "https://medentraacademy.com/" },
+      { property: "og:type", content: "website" },
     ],
+    links: [{ rel: "canonical", href: "https://medentraacademy.com/" }],
   }),
   component: Index,
 });
