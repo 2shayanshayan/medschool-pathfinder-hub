@@ -1,27 +1,18 @@
-## What happened
-Cloudflare is trying to deploy `main = ".output/server/index.mjs"`, but this TanStack Start build is configured to use a custom server entry (`src/server.ts`). That output file path does not exist, so Cloudflare stops before deploying.
+## Why you're still seeing the Squarespace icon
+
+Search engines (Google in particular) cache favicons aggressively — often for weeks. Even after we replace the file, your search result will keep showing the old icon until Google re-crawls the site. The fix is two parts: replace the icon correctly now, then wait for the cache to refresh.
 
 ## Plan
-1. Update the Cloudflare config so `main` points to the correct Worker entry: `src/server.ts`.
-2. Update the deploy instructions to use npm/npx on Windows instead of Bun commands.
-3. Add a note that these commands must be run from a local clone or from a configured GitHub Action, not typed into GitHub.com file pages.
 
-## Technical details
-- Change `wrangler.toml` from:
-  ```toml
-  main = ".output/server/index.mjs"
-  ```
-  to:
-  ```toml
-  main = "src/server.ts"
-  ```
-- Keep the existing assets config:
-  ```toml
-  [assets]
-  directory = ".output/public"
-  binding = "ASSETS"
-  ```
-- Keep `vite.config.ts` as-is because it already has:
-  ```ts
-  server: { entry: "server" }
-  ```
+1. **Upload the Medentra logo as a CDN asset** (`src/assets/medentra-logo.png.asset.json`) using `lovable-assets` from the uploaded file.
+2. **Generate proper favicon files** from that logo:
+   - `public/favicon.ico` (multi-size 16/32/48) — overwrites the existing one
+   - `public/favicon-32.png`, `public/favicon-16.png`
+   - `public/apple-touch-icon.png` (180×180)
+3. **Register icons in `src/routes/__root.tsx`** by adding to the `links` array:
+   - `rel="icon"` (ico + png variants)
+   - `rel="apple-touch-icon"`
+   - This forces browsers and crawlers to pick up the new icon instead of guessing.
+4. **Tell you what to do next**: after publishing, Google's search result favicon can take 1–4 weeks to update. You can speed it up by requesting a re-crawl of your homepage in Google Search Console.
+
+No other site code or content changes.
