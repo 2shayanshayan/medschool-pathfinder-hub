@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /pitch-x9k2m7-hq
 
 Sitemap: https://medentraacademy.com/sitemap.xml
