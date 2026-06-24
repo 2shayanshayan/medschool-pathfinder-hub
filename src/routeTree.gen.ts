@@ -9,9 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as PitchX9k2m7HqRouteImport } from './routes/pitch-x9k2m7-hq'
 import { Route as BookRouteImport } from './routes/book'
 import { Route as IndexRouteImport } from './routes/index'
 
+const PitchX9k2m7HqRoute = PitchX9k2m7HqRouteImport.update({
+  id: '/pitch-x9k2m7-hq',
+  path: '/pitch-x9k2m7-hq',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BookRoute = BookRouteImport.update({
   id: '/book',
   path: '/book',
@@ -26,31 +32,42 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/book': typeof BookRoute
+  '/pitch-x9k2m7-hq': typeof PitchX9k2m7HqRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/book': typeof BookRoute
+  '/pitch-x9k2m7-hq': typeof PitchX9k2m7HqRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/book': typeof BookRoute
+  '/pitch-x9k2m7-hq': typeof PitchX9k2m7HqRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/book'
+  fullPaths: '/' | '/book' | '/pitch-x9k2m7-hq'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/book'
-  id: '__root__' | '/' | '/book'
+  to: '/' | '/book' | '/pitch-x9k2m7-hq'
+  id: '__root__' | '/' | '/book' | '/pitch-x9k2m7-hq'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BookRoute: typeof BookRoute
+  PitchX9k2m7HqRoute: typeof PitchX9k2m7HqRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/pitch-x9k2m7-hq': {
+      id: '/pitch-x9k2m7-hq'
+      path: '/pitch-x9k2m7-hq'
+      fullPath: '/pitch-x9k2m7-hq'
+      preLoaderRoute: typeof PitchX9k2m7HqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/book': {
       id: '/book'
       path: '/book'
@@ -71,6 +88,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BookRoute: BookRoute,
+  PitchX9k2m7HqRoute: PitchX9k2m7HqRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
