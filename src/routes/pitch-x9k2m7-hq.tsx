@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Activity,
+  CheckCircle,
   ClipboardList,
   MessageCircle,
+  Phone,
   Repeat,
   Target,
   TrendingUp,
@@ -12,7 +14,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 export const Route = createFileRoute("/pitch-x9k2m7-hq")({
   head: () => ({
     meta: [
-      { title: "Student HQ — Medentra Academy" },
+      { title: "Student HQ, Medentra Academy" },
       { name: "robots", content: "noindex, nofollow, noarchive, nosnippet" },
       { name: "description", content: "Private overview of how we track student progress and assign work." },
     ],
@@ -36,7 +38,7 @@ function PitchPage() {
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
             A single hub where every student's progress, weak areas, and weekly
-            plan live — so nothing drifts and no week is wasted.
+            plan live, so nothing drifts and no week is wasted.
           </p>
         </div>
       </section>
@@ -47,12 +49,13 @@ function PitchPage() {
           <p className="mb-8 text-center text-xs font-medium uppercase tracking-[0.2em] text-accent">
             The weekly loop
           </p>
-          <div className="grid gap-4 md:grid-cols-4">
+          <div className="grid gap-4 md:grid-cols-5">
             {[
               { icon: Activity, label: "Track", body: "Scores logged by section, topic, and question type." },
-              { icon: Target, label: "Diagnose", body: "Weak areas surface automatically — no guessing." },
+              { icon: Target, label: "Diagnose", body: "Weak areas surface automatically, no guessing." },
               { icon: ClipboardList, label: "Assign", body: "Targeted work matched to the exact gap." },
               { icon: Repeat, label: "Review", body: "Re-test, re-score, repeat. The loop tightens each week." },
+              { icon: CheckCircle, label: "Accountability", body: "Students know exactly where they stand and what they owe next week." },
             ].map(({ icon: Icon, label, body }, i) => (
               <div key={label} className="relative rounded-xl border border-border bg-background p-5">
                 <div className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-md bg-accent/10 text-accent">
@@ -80,11 +83,11 @@ function PitchPage() {
                 How progress is tracked
               </p>
               <h2 className="text-3xl font-semibold leading-tight text-foreground md:text-4xl">
-                Every score, broken down — never just a number.
+                Every score, broken down, never just a number.
               </h2>
               <p className="mt-5 text-muted-foreground">
                 Mocks and practice sets are logged section by section. We don't
-                just see <em>"Verbal Reasoning: 650"</em> — we see which
+                just see <em>"Verbal Reasoning: 650"</em>, we see which
                 question types are dragging the score down, how timing is
                 holding up under pressure, and how the trend is moving week to
                 week.
@@ -114,7 +117,7 @@ function PitchPage() {
                   </div>
                 ))}
                 <p className="pt-3 text-xs text-muted-foreground">
-                  Illustrative — actual dashboards stay private to each student.
+                  Illustrative, actual dashboards stay private to each student.
                 </p>
               </div>
             </div>
@@ -140,9 +143,9 @@ function PitchPage() {
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
-              { icon: Target, title: "Targeted, not generic", body: "If timing is the issue in DM, the week's work is timed drills — not more theory." },
+              { icon: Target, title: "Targeted, not generic", body: "If timing is the issue in DM, the week's work is timed drills, not more theory." },
               { icon: ClipboardList, title: "A clear weekly list", body: "Students know on Monday exactly what to do, in what order, by Sunday." },
-              { icon: Repeat, title: "Always re-evaluated", body: "Last week's gaps either close or stay — and that decides next week's focus." },
+              { icon: Repeat, title: "Always re-evaluated", body: "Last week's gaps either close or stay, and that decides next week's focus." },
             ].map(({ icon: Icon, title, body }) => (
               <div key={title} className="rounded-2xl border border-border bg-card p-7">
                 <Icon className="h-6 w-6 text-accent" strokeWidth={1.75} />
@@ -162,7 +165,7 @@ function PitchPage() {
               <ul className="space-y-5">
                 {[
                   { day: "Mon", title: "Weekly plan drops", body: "Tailored task list lands in Student HQ." },
-                  { day: "Wed", title: "Mid-week check-in", body: "Quick async message — anything stuck?" },
+                  { day: "Wed", title: "Mid-week check-in", body: "Quick async message, anything stuck?" },
                   { day: "Sat", title: "Scored mock or set", body: "Logged and broken down by section." },
                   { day: "Sun", title: "1:1 review call", body: "Walk through results, set next week's focus." },
                 ].map((row) => (
@@ -183,7 +186,7 @@ function PitchPage() {
                 Review cadence
               </p>
               <h2 className="text-3xl font-semibold leading-tight text-foreground md:text-4xl">
-                A consistent rhythm — not waiting for the next call to course-correct.
+                A consistent rhythm, not waiting for the next call to course-correct.
               </h2>
               <p className="mt-5 text-muted-foreground">
                 Students hear from us through the week, not just on call day.
@@ -198,6 +201,38 @@ function PitchPage() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Parent involvement */}
+      <section className="border-t border-border/60 py-20 md:py-24">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-accent">
+              Parent involvement
+            </p>
+            <h2 className="text-3xl font-semibold leading-tight text-foreground md:text-4xl">
+              Parents stay in the loop, monthly and weekly.
+            </h2>
+            <p className="mt-5 text-lg text-muted-foreground">
+              You don't need to chase me for updates. The weekly progress note
+              keeps you informed, and a monthly call gives us space to talk
+              through what is working, what is next, and any questions you have.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2">
+            {[
+              { icon: MessageCircle, title: "Weekly progress note", body: "A short, plain-English summary of the week: what was completed, what improved, and what the next week targets." },
+              { icon: Phone, title: "Monthly parent call", body: "A dedicated call with me to review the bigger picture, adjust goals, and answer questions, not just a routine check-in." },
+            ].map(({ icon: Icon, title, body }) => (
+              <div key={title} className="rounded-2xl border border-border bg-card p-7">
+                <Icon className="h-6 w-6 text-accent" strokeWidth={1.75} />
+                <h3 className="mt-6 font-serif text-xl font-semibold text-card-foreground">{title}</h3>
+                <p className="mt-2 text-muted-foreground">{body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
